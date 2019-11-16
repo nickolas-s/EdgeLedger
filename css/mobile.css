@@ -1,0 +1,80 @@
+#what .items {
+    display: block;
+    padding: 1rem;
+}
+
+
+/* Align icon to left */
+#what .items .item {
+    display: flex;
+    text-align: left;
+}
+
+/* Position Icon */
+#what .items .item i {
+    margin-right: 1.3rem;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+
+/* Smartphones */
+
+@media(max-width: 500px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar .logo {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    #navbar ul {
+        padding: 0.5rem;
+    }
+
+    #showcase .showcase-content {
+        top: 111px;
+    }
+
+    #who {
+        display: block;
+    }
+
+    #who .who-img {
+        display: none;
+    }
+
+    #clients .items img {
+        width: 80%;
+    }
+
+    #clients .items div:last-child {
+        display: none;
+    }
+
+    #contact {
+        display: block;
+    }
+
+    #contact .map {
+        border-top: 4px solid #333;
+        height: 400px;
+    }
+}
+
+@media(max-height: 640px) {
+    #showcase .showcase-content {
+        top: calc(111px + 2rem);
+        margin-top: -2rem;
+    }
+
+    .l-heading {
+        font-size: 3rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+}
